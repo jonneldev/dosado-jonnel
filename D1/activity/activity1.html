@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Activity1</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Cafe Delights</h1>
+        <p>Your cozy corner for the best coffee and treats in town</p>
+    </header>
+
+    <main>
+        <div>
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below:</p>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="fullName">Name:</label>
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div>
+                        <label for="emailAddress">Email:</label>
+                        <input type="email" id="emailAddress" name="email">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Visit Information</legend>
+                    <div>
+                        <label for="visitDate">Preferred Visit Date:</label>
+                        <input type="date" id="visitDate" name="visitDate">
+                    </div>
+                    <div>
+                        <label for="visitTime">Preferred Time:</label>
+                        <input type="time" id="visitTime" name="visitTime">
+                    </div>
+                    <div>
+                        <label>Are you a returning customer?</label>
+                        <input type="radio" id="returningYes" name="returningCustomer" value="yes">
+                        <label for="returningYes">Yes</label>
+                        <input type="radio" id="returningNo" name="returningCustomer" value="no">
+                        <label for="returningNo">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <div>
+                        <label for="visitRating">Rate your last visit (1-5):</label>
+                        <input type="range" id="visitRating" name="rate" min="1" max="5">
+                    </div>
+                    <div>
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" rows="5"   name="comments" placeholder="Tell us about your experience..."></textarea>
+                    </div>
+                    <div>
+                        <label for="newsletter">Would you like to receive our newsletter?</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+                </fieldset>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
