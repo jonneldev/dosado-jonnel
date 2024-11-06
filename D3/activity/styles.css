@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bor;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
