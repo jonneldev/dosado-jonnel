@@ -4,15 +4,202 @@
     box-sizing: bor;
 }
 
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 5px 20px;
+    align-items: center;
+    position: fixed;
+    width: calc(100dvw - 25px);
+    background-color: white;
+}
+
+#logo {
+    height: 80%;
+}
+
+ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
 ul li a {
     text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    color: orange;
 }
 
 li {
     list-style: none;    
 }
 
-#navbar {
+li i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#home {
+    display: flex;
+    height: calc(100dvh - 50px);
+    margin-left: 40px;
+    align-items: center;
+    background-image: url(images/main_img.png);
+    background-size: 60vw;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    margin: 20px 0 20px 30px;
+    width: 45vw;
+}
+
+span {
+    color: orange;
+}
+
+button {
+    margin-left: 30px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px; /* Slightly rounded corners for a smoother look */
+    padding: 8px 15px; /* Increase padding for better button size */
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e67e00; /* Slightly darker orange for a richer hover effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+    transform: translateY(-2px); /* Lifts button up a bit on hover */
+}
+
+button:active {
+    background-color: #cc6b00; /* Darker orange for active (pressed) state */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow when pressed */
+    transform: translateY(1px); /* Slightly lowers button to simulate press */
+}
+
+#about {
+    height: calc(100dvh - 50px);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+#about img {
+    width: 50dvw;
+}
+
+#about button {
+    margin: 0;
+}
+
+#about h3 {
+    margin-top: 20px;
+}
+
+#about p {
+    margin: 20px 0;
+}
+
+
+#menu {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: grid;
+    width: 100dvw;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    height: calc(100dvh - 50px);
+    gap: 5px;
+
+}
+
+.menu-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.menu-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-order-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.menu-order-btn:hover {
+    background-color: #e65c00;
+}
+
