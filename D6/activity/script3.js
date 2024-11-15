@@ -26,7 +26,7 @@ while (true) {
 function reverseString(str) {
     return str.split('').reverse().join('');
 }
-
+2
 // Step 6: Call the reverseString function with the string 'hello' and log the result to the console.
 console.log(reverseString('hello'));
 
