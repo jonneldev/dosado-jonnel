@@ -78,4 +78,4 @@ let students = [
   };
   
   // Step 20: Access the 'age' property of the 'person' object and log it to the console.
-  console.log(person.age); 
+  console.log(person.age);  
