@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+margin: 20px;
+
+}
+.card {
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 16px;
+width: 300px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+width: 100%;
+aspect-ratio: 1 / 1;
+border-radius: 8px;
+margin-bottom: 16px;
+}
+
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+}
+
+.card p {
+font-size: 14px;
+color: #555;
+display: -webkit-box; /* Required for line clamping */
+line-clamp: 3;
+-webkit-line-clamp: 3; /* Number of lines to show */
+-webkit-box-orient: vertical; /* Specifies vertical orientation */
+overflow: hidden; /* Hides content that overflows */
+text-overflow: ellipsis; /* Adds '...' at the end of the visible text */
+line-height: 1.5; /* Adjust line height to control spacing */
+max-height: calc(1.5em * 3); /* (line-height * number of lines) */
+}
+
+.card span {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+color: gray;
+margin-bottom: 10px;
+}
